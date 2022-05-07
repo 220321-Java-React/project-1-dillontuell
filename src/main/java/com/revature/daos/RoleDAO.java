@@ -83,12 +83,11 @@ public class RoleDAO implements RoleDAOInterface{
 
 	{
 	
-		try(Connection conn = ConnectionUtil.getConnection()){
+
+		/*try(Connection conn = ConnectionUtil.getConnection()){
 			
-			//write out our SQL UPDATE command
-			String sql = "update roles s where role_title = ?";
+			String sql = "update roles where role_title = ?";
 			
-			//create our PreparedStatement
 			PreparedStatement ps = conn.prepareStatement(sql);
 			
 			ps.setString(title);

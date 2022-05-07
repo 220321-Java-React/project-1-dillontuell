@@ -3,7 +3,7 @@ package com.revature.controllers;
 import java.util.Collection;
 
 import com.google.gson.Gson;
-import com.revature.models.LoginDTO;
+//import com.revature.models.LoginDTO;
 import com.revature.services.AuthService;
 
 import io.javalin.http.Handler;
@@ -19,7 +19,7 @@ public class AuthController {
 		
 		Gson gson = new Gson();
 		
-		LoginDTO LDTO = gson.fromJson(body, LoginDTO.class);
+		/*LoginDTO LDTO = gson.fromJson(body, LoginDTO.class);
 		
 		if(as.login(LDTO.getUsername(), LDTO.getPassword()) != null) {
 			
@@ -33,11 +33,8 @@ public class AuthController {
 			
 		} else {
 			ctx.status(401);
-			System.out.println("Uh Oh login failed");
-		}
-		
-		
-	};
-	
-	
+			*/System.out.println("Uh Oh login failed");
+		};
 }
+
+	
