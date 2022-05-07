@@ -17,7 +17,7 @@ public class ConnectionUtil {
 		}
 		
 		String url = "jdbc:postgresql://localhost:5432/postgres?currentSchema=reimbursement";
-		String username = "user";
+		String username = "postgres";
 		String password = "password";
 		
 		return DriverManager.getConnection(url, username, password);
