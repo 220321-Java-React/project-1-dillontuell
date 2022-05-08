@@ -29,7 +29,7 @@ public class UserDAO implements UserDAOInterface{
 			
 			while(rs.next()) {
 				User u = new User(
-						rs.getInt("user_id"),
+						rs.getInt("users_id"),
 						rs.getString("username"),
 						rs.getString("password"),
 						rs.getString("first_name"),
